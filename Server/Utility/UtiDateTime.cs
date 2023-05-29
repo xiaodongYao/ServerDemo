@@ -57,6 +57,13 @@
         }
 
         /// <summary>
+        /// 指定时间对应是单周还是双周
+        /// </summary>
+        /// <param name="timeStamp"></param>
+        /// <returns></returns>
+        public static bool IsOddWeek(uint timeStamp) => CalcWeek(timeStamp) % 2 == 1;
+
+        /// <summary>
         /// 求现在是某个刷新周期中的第几天
         /// </summary>
         /// <param name="timeStamp"></param>
